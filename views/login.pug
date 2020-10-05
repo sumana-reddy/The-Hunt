@@ -8,11 +8,11 @@ block content
                     p.text-danger Error!!!
 
             - var h1Classes = ['h3', 'mb-3', 'font-weight-normal']
-            h1(class=h1Classes) Please sign in
+            h1(class=h1Classes) Login
 
             //-input email
             label( for="inputEmail" class="sr-only") Email address
-            input(type="email" name="username" id="inputEmail" class="form-control" placeholder="Email address" required autofocus)
+            input(type="email" name="username" id="inputEmail" class="form-control" placeholder="Email" required autofocus)
 
             //-input password
             label(for="inputPassword" class="sr-only") Password
@@ -25,9 +25,8 @@ block content
                     input(type="checkbox" value="remember-me")
                     span Remember me
 
-            //-signIn button
+            //-LoginIn button
             - var buttonClass=['btn', 'btn-lg', 'btn-primary', 'btn-block'];
-            button(class=buttonClass type="submit") Sign in
+            button(class=buttonClass type="submit") Login
 
-            - var pClasses=['mt-5', 'mb-3', 'text-muted'];
-            p(class=pClasses) &copy; 2017-2018
+            
